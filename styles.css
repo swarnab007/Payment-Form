@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #34495e;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 800px;
+    min-height: 500px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+}
+.left {
+    flex-basis: 50%;
+}
+.right {
+    flex-basis: 50%;
+}
+
+form {
+    padding: 1rem;
+}
+form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+    margin: 0.5rem 0;
+}
+form label {
+    font-size: 18px;
+    font-weight: 520;
+}
+h3 {
+    margin-bottom: 8px;
+}
+#zip {
+    display: flex;
+    margin-top: 0.5rem;
+}
+#zip select {
+    padding: 0.5rem 0.7rem;
+    margin-right: 26px;
+    margin-top: 5px;
+}
+#zip .zipcode input {
+    padding: 0.5rem 0.7rem;
+    margin-top: 5px;
+}
+button {
+    width: 100%;
+    margin-top: 1.7rem;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: green;
+    font-size: 17px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkgreen;
+}
+@media only screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+}
