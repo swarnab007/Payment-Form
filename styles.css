@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@400;500&family=Rubik&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
 .main-container {
     width: 100vw;
     min-height: 100vh;
-    background-color: #34495e;
+    background-color: #c1c1c1;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -15,7 +20,8 @@
 .container {
     max-width: 800px;
     min-height: 500px;
-    background-color: aqua;
+    background-color: #39d1ff;
+    filter: drop-shadow( 0 0 0.75rem #424d50);
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
@@ -39,10 +45,19 @@ form input[type="text"] {
 }
 form label {
     font-size: 18px;
-    font-weight: 520;
+    font-weight: 420;
 }
 h3 {
     margin-bottom: 8px;
+    font-weight: 600;
+}
+h4{
+    font-weight: 420;
+}
+.cards-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #zip {
     display: flex;

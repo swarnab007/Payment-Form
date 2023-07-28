@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Payment Form</title>
 </head>
+
 <body>
     <div class="main-container">
         <div class="container">
@@ -34,17 +36,19 @@
                         </div>
                         <div class="zipcode">
                             <label for="zipcode">Zip Code</label>
-                            <input type="number" placeholder="zipcode">
+                            <input type="text" placeholder="zipcode">
                         </div>
                     </div>
                 </form>
             </div>
             <div class="right">
                 <form action="#" class="form">
+                       <div class="cards-list">
+                        <img src="./image/card1.png" width="100px">
+                        <img src="./image/card2.png" width="50px">
+                       </div>
+                    <br><br>
                     <h3>PAYMENT</h3>
-                    <h4>Accepted Cards</h4>
-                    <img src="./image/card1.png" width="100px">
-                    <img src="./image/card2.png" width="50px"><br><br>
                     <label for="cardno">Credit Card Number</label>
                     <input type="text" name="" placeholder="Enter Card Number">
                     <label for="exp">Exp Month</label>
@@ -62,7 +66,7 @@
                         </div>
                         <div class="zipcode">
                             <label for="cvv">CVV</label>
-                            <input type="number" placeholder="CVV">
+                            <input type="text" placeholder="CVV">
                         </div>
                     </div>
                     <button>Proceed to checkout</button>
@@ -71,4 +75,5 @@
         </div>
     </div>
 </body>
+
 </html>
