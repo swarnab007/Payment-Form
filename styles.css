@@ -58,7 +58,6 @@ form label {
 .blur{
     filter: drop-shadow(0 0 0.25rem rgb(98, 106, 109));
 }
-}
 h3 {
     margin-bottom: 8px;
     font-weight: 600;
