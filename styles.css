@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@400;500&family=Rubik&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
 .main-container {
     width: 100vw;
     min-height: 100vh;
-    background-color: #34495e;
+    background-color: #d8f6ff;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -15,7 +20,8 @@
 .container {
     max-width: 800px;
     min-height: 500px;
-    background-color: aqua;
+    background-color: #b6eeff;
+    filter: drop-shadow( 0 0 0.75rem #424d50);
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
@@ -36,13 +42,34 @@ form input[type="text"] {
     padding: 0.5rem 0.7rem;
     outline: none;
     margin: 0.5rem 0;
+    background-color: #ffffff;
+    border: 0.002em solid black;
 }
 form label {
     font-size: 18px;
-    font-weight: 520;
+    font-weight: 420;
+}
+.bg-white{
+    background-color: #ffffff;
+    border: 0.002em solid black;
+    border-radius: .35rem;
+    filter: drop-shadow(0 0 0.25rem rgb(98, 106, 109));
+}
+.blur{
+    filter: drop-shadow(0 0 0.25rem rgb(98, 106, 109));
 }
 h3 {
     margin-bottom: 8px;
+    font-weight: 600;
+}
+h4{
+    font-weight: 420;
+}
+.cards-list{
+    margin-top: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #zip {
     display: flex;
@@ -60,17 +87,28 @@ h3 {
 button {
     width: 100%;
     margin-top: 1.7rem;
-    padding: 0.5rem 0;
+    padding: 0.0025rem 0;
     color: white;
-    background-color: green;
+    background-color: #00bcf5;
     font-size: 17px;
     cursor: pointer;
+    border: .85rem solid transparent;
+    border-radius: 5rem;
+}
+.cards-list img{
+    margin-left: 1.25rem;
 }
 button:hover {
-    background-color: darkgreen;
+    background-color: #0097c5;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     .container {
         flex-direction: column;
+        margin: 0 2rem;
+    }
+}
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .container {
+        margin: 0 2rem;
     }
 }
